@@ -24,7 +24,7 @@ public class calculadora {
                 if (num2 != 0){
                     result = num1 / num2;
                 } else {
-                    System.out.println("Erro: Divisão com resto não é aceita. ");
+                    System.out.println("Erro: Divisão por zero não é aceita. ");
                     return;
                 }
             }
