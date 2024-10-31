@@ -1,5 +1,9 @@
 import java.util.Scanner;
 
+/*
+* Exercício de calculo da área e valor de um  terreno
+* */
+
 public class calculoTerreno {
     public static void main (String[] args){
         Scanner scanner = new Scanner(System.in);
