@@ -26,19 +26,24 @@ public class calculoImpostoDeRenda {
         System.out.printf("Digite seu salário: ");
         double salario = sc.nextDouble();
 
-        double calculo;
+        double calculo=0;
+
+        double imposto8 = 80;
+        double imposto18 = 270;
+
+
 
         if (salario >= 0 && salario <= 2000.00){
             System.out.printf("Insento de imposto ");
         } else if (salario > 2000.00 && salario <= 3000.00) {
-            calculo = (salario  - 2000.00 ) * 8%;
-            System.out.printf("RS %.2f ", calculo);
-        } else if (salario >= 3000.00 && salario <= 4500.00) {
-            calculo = (salario - 2000.00);
-            if (calculo > 1&& calculo <= 1000){
-                calculo = calculo *
-            }
+            calculo = (salario  - 2000.00 ) * 0.08;
+        } else if (salario > 3000.00 && salario <= 4500.00) {
+            calculo = (salario - 3000) * 0.18 + imposto8;
+        } else if (salario > 4500.00) {
+            calculo = (salario - 4500) * 0.28 + imposto8 + imposto18;
         }
+
+        System.out.printf("RS %.2f ", calculo);
 
 
         sc.close();
