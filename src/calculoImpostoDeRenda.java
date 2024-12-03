@@ -44,6 +44,7 @@ public class calculoImpostoDeRenda {
         }
 
         System.out.printf("RS %.2f ", calculo);
+        
 
 
         sc.close();
